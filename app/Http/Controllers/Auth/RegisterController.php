@@ -104,9 +104,9 @@ class RegisterController extends Controller
         }
 
         // If the registration is enabled
-        if (config('settings.registration')) {
-            return view('auth.register');
-        }
+        // if (config('settings.registration')) {
+        //     return view('auth.register');
+        // }
 
         abort(404);
     }

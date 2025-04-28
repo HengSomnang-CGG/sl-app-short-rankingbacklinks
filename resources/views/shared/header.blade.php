@@ -23,11 +23,11 @@
                             <a class="nav-link" href="{{ route('login') }}" role="button">{{ __('Login') }}</a>
                         </li>
 
-                        @if(config('settings.registration'))
+                        {{-- @if(config('settings.registration'))
                             <li class="nav-item d-flex align-items-center">
                                 <a class="btn btn-outline-primary" href="{{ route('register') }}" role="button">{{ __('Register') }}</a>
                             </li>
-                        @endif
+                        @endif --}}
                     </ul>
                 </div>
             </nav>

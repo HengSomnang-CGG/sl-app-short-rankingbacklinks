@@ -53,7 +53,13 @@ Route::prefix('update')->group(function () {
 });
 
 // Home routes
-Route::get('/', 'HomeController@index')->name('home');
+// Route::get('/', 'HomeController@index')->name('home');
+// Home routes
+Route::get('/',
+function(){
+    return view('403');
+}
+)->name('home');
 Route::post('/shorten', 'HomeController@createLink')->middleware('throttle:10,1')->name('guest');
 
 // Contact routes

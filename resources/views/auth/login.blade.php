@@ -70,11 +70,11 @@
                                     </button>
                                 </form>
                             </div>
-                            @if(config('settings.registration'))
+                            {{-- @if(config('settings.registration'))
                                 <div class="card-footer bg-base-2 border-0">
                                     <div class="text-center text-muted my-2">{{ __('Don\'t have an account?') }} <a href="{{ route('register') }}" role="button">{{ __('Register') }}</a></div>
                                 </div>
-                            @endif
+                            @endif --}}
                         </div>
                         <div class="col-12 col-lg-7 bg-dark d-none d-lg-flex flex-fill background-size-cover background-position-center" style="background-image: url({{ asset('images/login.svg') }})">
                             <div class="card-body p-lg-5 d-flex flex-column flex-fill position-absolute top-0 right-0 bottom-0 left-0">
