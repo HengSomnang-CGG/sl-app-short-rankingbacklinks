@@ -45,7 +45,7 @@ class AppServiceProvider extends ServiceProvider
         User::observe(UserObserver::class);
         Pixel::observe(PixelObserver::class);
 
-        if ($this->app->environment('production') && isset($_SERVER['HTTPS'])) {
+        if ($this->app->environment('production')) {
             URL::forceScheme('https');
         }
     }
